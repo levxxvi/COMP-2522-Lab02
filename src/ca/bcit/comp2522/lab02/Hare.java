@@ -7,7 +7,7 @@ public class Hare {
     int position;
 
     /**
-     * Create a new Hare object.
+     * Create a new Hare object
      */
     public Hare (){
         position = 0;

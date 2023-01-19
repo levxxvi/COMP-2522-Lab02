@@ -6,10 +6,17 @@ import java.util.Random;
 public class Tortoise {
     int position;
 
+    /**
+     * Create a new Tortoise object
+     */
     public Tortoise(){
         position = 0;
     }
 
+    /**
+     * Choose the next move action for the Tortoise randomly
+     * @return the position of the Tortoise after the movement
+     */
     public int move(){
         Random rnd = new Random();
         int movePrompt = rnd.nextInt(100);
@@ -23,10 +30,18 @@ public class Tortoise {
         return this.position;
     }
 
+    /**
+     * Get the current position of the Tortoise
+     * @return the position of the Tortoise
+     */
     public int getPosition() {
         return position;
     }
 
+    /**
+     * Set the position of the Tortoise
+     * @param position the new position of the Tortoise. must be an integer
+     */
     public void setPosition(int position) {
         this.position = position;
     }
