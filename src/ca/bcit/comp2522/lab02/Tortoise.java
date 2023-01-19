@@ -16,13 +16,16 @@ public class Tortoise {
 
     public int move(){
         Random rnd = new Random();
-        int movePrompt = rnd.nextInt(20);
-        if (movePrompt <= 14){
-            return position + 2;
-        } else if (movePrompt <= 18){
-            return position - 1;
+        int movePrompt = rnd.nextInt(100);
+        if (movePrompt < 75){
+            this.position += 2;
+            return this.position;
+        } else if (movePrompt < 95){
+            this.position -= 1;
+            return this.position;
         } else {
-            return position + 1;
+            this.position += 1;
+            return this.position;
         }
     }
 

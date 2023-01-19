@@ -14,18 +14,23 @@ public class Hare {
         position = newPosition;
     }
 
+    /**
+     * Chooses the next move action for the hare randomly
+     * @return the position of the hare after the movement
+     */
     public int move(){
         Random rnd = new Random();
-        int movePrompt = rnd.nextInt(20);
-        if (movePrompt <= 9){
-            return position;
-        } else if (movePrompt <= 13){
-            return position - 3;
-        } else if (movePrompt <= 15) {
-            return position + 4;
+        int movePrompt = rnd.nextInt(100);
+        if (movePrompt < 50){
+            return this.position;
+        } else if (movePrompt < 75){
+            this.position += 4;
+        } else if (movePrompt < 80) {
+            this.position -= 3;
         } else {
-            return position;
+            this.position += 2;
         }
+        return this.position;
     }
 
     public int getPosition(){
