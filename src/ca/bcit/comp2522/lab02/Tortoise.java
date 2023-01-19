@@ -10,23 +10,17 @@ public class Tortoise {
         position = 0;
     }
 
-    public Tortoise(int newPosition){
-        position = newPosition;
-    }
-
     public int move(){
         Random rnd = new Random();
         int movePrompt = rnd.nextInt(100);
         if (movePrompt < 75){
             this.position += 2;
-            return this.position;
         } else if (movePrompt < 95){
             this.position -= 1;
-            return this.position;
         } else {
             this.position += 1;
-            return this.position;
         }
+        return this.position;
     }
 
     public int getPosition() {

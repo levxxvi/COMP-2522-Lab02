@@ -6,37 +6,42 @@ import java.util.Random;
 public class Hare {
     int position;
 
+    /**
+     * Create a new Hare object.
+     */
     public Hare (){
         position = 0;
     }
 
-    public Hare(int newPosition){
-        position = newPosition;
-    }
-
     /**
-     * Chooses the next move action for the hare randomly
-     * @return the position of the hare after the movement
+     * Choose the next move action for the Hare randomly
+     * @return the position of the Hare after the movement
      */
     public int move(){
         Random rnd = new Random();
         int movePrompt = rnd.nextInt(100);
-        if (movePrompt < 50){
-            return this.position;
-        } else if (movePrompt < 75){
+        if (movePrompt < 25){
             this.position += 4;
-        } else if (movePrompt < 80) {
+        } else if (movePrompt < 30) {
             this.position -= 3;
-        } else {
+        } else if (movePrompt < 50){
             this.position += 2;
         }
         return this.position;
     }
 
+    /**
+     * Get the current position of the Hare
+     * @return the position of the Hare
+     */
     public int getPosition(){
         return this.position;
     }
 
+    /**
+     * Set the position of the Hare
+     * @param position the new position of the Hare. must be an integer
+     */
     public void setPosition(int position) {
         this.position = position;
     }

@@ -5,12 +5,12 @@ public class Tournament {
         int hareWins = 0;
         int tortoiseWins = 0;
         String overallWinner;
-        for (int i = 0; i < 100; i++){
+        for (int i = 0; i < numOfRaces; i++){
             Hare tourneyHare = new Hare();
             Tortoise tourneyTortoise = new Tortoise();
-            Race newRace = new Race(100, tourneyTortoise, tourneyHare);
+            Race newRace = new Race(lengthOfRace, tourneyTortoise, tourneyHare);
             String winner = newRace.simulateRace();
-            if (winner == "Hare"){
+            if (winner.equals("Hare")){
                 hareWins++;
             } else {
                 tortoiseWins++;
