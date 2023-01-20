@@ -3,6 +3,13 @@ package ca.bcit.comp2522.lab02;
 import java.util.Objects;
 import java.util.Random;
 
+
+/**
+ * Tortoise
+ *
+ * @author Lex Wong
+ * @version 202213
+ */
 public class Tortoise {
     int position;
 

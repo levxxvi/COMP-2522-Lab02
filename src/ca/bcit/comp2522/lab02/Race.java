@@ -2,6 +2,12 @@ package ca.bcit.comp2522.lab02;
 
 import java.util.Random;
 
+/**
+ * Race
+ *
+ * @author Lex Wong
+ * @version 202213
+ */
 public class Race {
     private final int length;
     private int tick;

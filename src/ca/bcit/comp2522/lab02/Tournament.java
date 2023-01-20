@@ -1,6 +1,18 @@
 package ca.bcit.comp2522.lab02;
 
+/**
+ * Tournament
+ *
+ * @author Lex Wong
+ * @version 202213
+ */
 public class Tournament {
+    /**
+     * Simulate a defined amount of races with the same distance
+     * @param numOfRaces an integer defining the amount of races to simulate. must be an integer greater than 0
+     * @param lengthOfRace an integer defining the length of the race, must be an integer greater than 0
+     * @return a string describing who won the most, and how many victories each animal got
+     */
     private static String simulateRace(int numOfRaces, int lengthOfRace){
         int hareWins = 0;
         int tortoiseWins = 0;
@@ -23,6 +35,7 @@ public class Tournament {
         }
         return overallWinner + "The hare won: " + hareWins + " times. The tortoise won: " + tortoiseWins + " times.\n";
     }
+
     public static void main(String[] args) {
         Hare tourneyHare = new Hare();
         Tortoise tourneyTortoise = new Tortoise();

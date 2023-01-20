@@ -3,6 +3,12 @@ package ca.bcit.comp2522.lab02;
 import java.util.Objects;
 import java.util.Random;
 
+/**
+ * Hare
+ *
+ * @author Lex Wong
+ * @version 202213
+ */
 public class Hare {
     int position;
 
