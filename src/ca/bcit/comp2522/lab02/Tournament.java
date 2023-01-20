@@ -42,6 +42,12 @@ public class Tournament {
         Race newRace = new Race(100, tourneyTortoise, tourneyHare);
         String winner = newRace.simulateRace();
         System.out.println("The " + winner + " won the race after " + newRace.getTick() + " ticks\n");
+        System.out.print("The position of the winner was: ");
+        if (winner.equals("Hare")){
+            System.out.print(tourneyHare.getPosition() + "\n");
+        } else {
+            System.out.print(tourneyTortoise.getPosition() + "\n");
+        }
         System.out.println("For the length 100 races: \n" + simulateRace(100, 100));
         System.out.println("For the length 1000 races: \n" + simulateRace(100, 1000));
     }
